@@ -9,22 +9,22 @@ class Shape {
 
 class RoundedRectangle : public Shape {
   public:
-    void draw() { std::cout << "Inside RoundedRectangle::draw() method." << std::endl; }
+    void draw() override { std::cout << "Inside RoundedRectangle::draw() method." << std::endl; }
 };
 
 class RoundedSquare : public Shape {
   public:
-    void draw() { std::cout << "Inside RoundedSquare::draw() method." << std::endl; }
+    void draw() override { std::cout << "Inside RoundedSquare::draw() method." << std::endl; }
 };
 
 class Rectangle : public Shape {
   public:
-    void draw() { std::cout << "Inside Rectangle::draw() method." << std::endl; }
+    void draw() override { std::cout << "Inside Rectangle::draw() method." << std::endl; }
 };
 
 class Square : public Shape {
   public:
-    void draw() { std::cout << "Inside Square::draw() method." << std::endl; }
+    void draw() override { std::cout << "Inside Square::draw() method." << std::endl; }
 };
 
 class AbstractFactory {
